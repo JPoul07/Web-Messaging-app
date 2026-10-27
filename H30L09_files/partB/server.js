@@ -19,4 +19,6 @@ io.on("connection", (socket) => {
         console.log("User disconnected")
     })
 })
-server.listen(PORT)
+server.listen(PORT, "10.113.170.137", () => {
+    console.log(`Server is listening on port ${PORT}`)
+})
